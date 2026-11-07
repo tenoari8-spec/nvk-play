@@ -117,6 +117,48 @@ textarea{width:100%;min-height:84px;padding:13px 14px;border-radius:12px;border:
 input[type=email],input[type=password]{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #2b3566;background:var(--card);color:var(--tx);font:inherit;font-size:16px}
 body.ro [data-c="addc"],body.ro [data-d="addep"],body.ro [data-d="remove"],body.ro [data-d="eprem"]{display:none}
 .acts.s{gap:6px}.acts.s .btn{flex:none;padding:6px 10px;font-size:12px}
+
+/* ===== Layout v2 ===== */
+:root{--bg:#07090f;--bg2:#0d1220;--card:#121829;--ac:#6d5efc;--ac2:#a79bff;--line:#1c2440}
+body{background:var(--bg);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.1px}
+.ic{display:block;flex:none}
+.lg{display:block;height:auto;width:150px}.lg.sm{width:62px}
+.splash .lg{width:220px;animation:pop .9s ease both}@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+.pick .lg{width:104px;margin-top:6px}
+.top{position:sticky;top:0;z-index:20;margin:0 -20px;padding:12px 20px 10px;background:linear-gradient(var(--bg) 62%,#07090f00)}
+.top .tr{display:flex;gap:10px;align-items:center}
+.ib{width:40px;height:40px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#ffffff14;color:#fff}
+.top .av.s{width:40px;height:40px;border-radius:50%;font-size:21px}
+.main{padding-top:0}
+.btn{border-radius:10px}
+.btn.w{background:#fff;color:#0a0d18;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn.t{background:#ffffff26;color:#fff;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.bn{gap:0;padding:0;margin:0 -20px 4px}
+.b{border-radius:0;aspect-ratio:4/5;max-height:540px;padding:20px 20px 22px;gap:9px}
+.b::after{background:linear-gradient(to top,var(--bg) 3%,#07090fe6 34%,#07090f00 76%)}
+.b h2{font-size:30px;line-height:1.08;letter-spacing:-.4px}
+.b p{font-size:14px;line-height:1.45;color:#cfd5ee}
+.b .mr{display:flex;align-items:center;gap:10px;font-size:13px;color:#cfd5ee}
+.b .hb{display:flex;gap:10px;margin-top:4px}.b .hb .btn{padding:11px 16px;font-size:14px}
+.dots{display:flex;justify-content:center;gap:6px;margin:10px 0 20px}
+.dots i{width:6px;height:6px;border-radius:3px;background:#ffffff40;transition:width .2s,background .2s}.dots i.on{width:18px;background:#fff}
+.rw{margin:0 -20px 26px}.rw h3{margin:0 20px 12px;font-size:18px;font-weight:700;letter-spacing:-.2px}
+.ct{width:118px}.cv{border-radius:10px;box-shadow:0 5px 16px #0008}
+.cap{display:block;margin-top:7px;font-size:12px;color:#b9c0dc;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gr .cap{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+nav{background:#080b14f7;border-top:1px solid var(--line)}
+nav button{gap:4px;font-size:10.5px;padding:9px 0 11px}
+nav button i{display:block;line-height:0;font-style:normal}
+nav button.on{color:#fff}nav button.on i svg{fill:#ffffff24}
+.card{border:1px solid var(--line)}
+.row{border:1px solid var(--line)}
+.pm button{background:#0008;display:flex;align-items:center;justify-content:center}
+.pt button{display:flex;align-items:center;justify-content:center}
+.pr button{display:flex;align-items:center}
+.pl .pt{padding-top:10px}
+.sl{scroll-padding:0 20px}
+.bn{margin-top:-62px}
+.top{z-index:30}
 </style>
 </head>
 <body>
